@@ -39,7 +39,7 @@ debug: dirs $(BIN_DIR)/$(TARGET)
 # Build executable
 # -----------------------------
 $(BIN_DIR)/$(TARGET): $(OBJS)
-	$(CC) $(OBJS) -o $@
+	$(CC) $(OBJS) -lncurses -o $@
 
 # -----------------------------
 # Build object files with dependency tracking
